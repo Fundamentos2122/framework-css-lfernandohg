@@ -138,3 +138,47 @@
     color: #fff;
     background-color: var(--color-dark);
 }
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    background-color: rgba(58, 58, 58, 0.411);
+}
+
+.modal-content{
+    max-width: 500px;
+    position: relative;
+    margin: 1em auto;
+    background-color: whitesmoke;
+    border-radius: 0.25em;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-body{
+    padding: 1em;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: var(--border-color);
+    text-align: justify;
+}
+
+.modal-footer{
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-footer > *{
+    margin: 00.25em;
+}
